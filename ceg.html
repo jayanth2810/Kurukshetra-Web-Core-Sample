@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="it" xml:lang="it">
+<link rel='stylesheet' href='ceg.css' type='text/css' />
+<link rel='stylesheet' href='skin.css' type='text/css' />
+
+<head>
+
+	<script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="application.js"></script>
+    <script type="text/javascript" src="jquery.scrollable-1.0.2.js"></script>
+    <script type="text/javascript" src="jquery.mousewheel.js"></script>
+	<script type="text/javascript" src="jquery.jcarousel.min.js"></script>
+	
+	
+</head>
+<body>
+<div id="top">
+<ul id="mycarousel" class="jcarousel-skin-tango">
+    <li><img src="kurukshetra.jpeg" width="160" height="175" alt="" /></li>
+    <li><img src="techofes.jpg" width="160" height="175" alt="" /></li>
+    <li><img src="agni.jpg" width="160" height="175" alt="" /></li>
+    <li><img src="abacus.jpg" width="160" height="175" alt="" /></li>
+    <li><img src="itrix.jpg" width="160" height="175" alt="" /></li>
+    <li><img src="vision.jpg" width="160" height="175" alt="" /></li>
+    <li><img src="waves.jpg" width="160" height="175" alt="" /></li>
+    <li><img src="pinnacle.jpg" width="160" height="175" alt="" /></li>
+	<li><img src="civilization.jpg" width="160" height="175" alt="" /></li>
+    <li><img src="manusys.jpg" width="160" height="175" alt="" /></li>
+    <li><img src="surang.jpg" width="160" height="175" alt="" /></li>
+  </ul>
+<img src="ceg1.jpg" alt="" id="logo" width="320" height="200"/>
+
+</div>
+
+
+
+ <div id="catalogo_description">
+    <div id="image_catalogo">
+    <img src="department.jpg" class="imgcatalogo" align="middle" alt="Marketing" title="Departments" name="Marketing" id="marketing_catalogo"/>
+    <img src="home.jpg" class="imgcatalogo" align="middle" alt="Web Site" title="Home" name="Web Site" id="website_catalogo"/>
+    <img src="faculty.jpg" class="imgcatalogo" align="middle" alt="Software" title="Faculty" name="Software" id="software_catalogo" />
+	<img src="AboutUs.jpg" class="imgcatalogo" align="middle" alt="Hardware" title="About us" name="Software" id="hardware_catalogo" />
+  </div>
+  <div id="marketing-text" class="catalogo-text" style="display:none;"><p align="left">DEPARTMENT</p><br />
+  	
+Department of Technology<br />
+
+Department of Information and Communication Engineering<br />
+	
+Department of Civil Engineering<br />
+
+Department of Management Sciences<br />
+	
+Department of Mechanical Engineering<br />
+
+Department of Science and Humanities<br />
+	
+Department of Electrical and Electronics Engineering<br />
+
+Department of Architecture and Planning<br />
+</div>
+  <div id="website-text" class="catalogo-text" style="display:none;"><p align="left">HOME</p><br />
+  Anna University (AU), formerly Perarignar Anna University of Technology (PAUT), is a technical university in Tamil Nadu, India. <br />It's been ranked 5th best university in India. The university encompasses within it one of the oldest technical institutes in the world and has a history spanning 218 years (as of 2012). It was renamed 'Anna University' on 4 September 1978 as a unitary university, named after C. N. Annadurai. <br />It became an affiliating university in 2001, absorbing about 250 engineering colleges in Tamil Nadu. Between 2007 and 2010 it was split into six universities, namely, Anna University, Chennai, Anna University of Technology, Chennai, Anna University of Technology, <br /> Tiruchirappalli,Anna University of Technology, Coimbatore, Anna University of Technology Tirunelveli and Anna University of Technology, Madurai. </div>
+  
+  <div id="software-text" class="catalogo-text" style="display:none;"><p align="left">FACULTY</p><br />CEG has some of the nation's best brains
+  working for it.<br/>There are experts from almost every field who stand as a pillar of strength for the students in CEG<br/>
+  </div>
+  <div id="hardware-text" class="catalogo-text" style="display:none;"><p align="left">ABOUT US</p><br />
+      Anna University was established on 4th September 1978 as a unitary type of University. <br />It offers higher education in Engineering, Technology and allied Sciences relevant to the current and projected needs of the society.<br />The University was formed by bringing together and integrating two well-known technical institutions in the city of Madras.<br />   
+      Situated in the southern part of the city of Madras (Chennai), the University's main campus extends over 100 hectares abutting the Adyar River on the north and Raj Bhavan on the south. <br />The Bioprocess Laboratory donated by SPIC is located at present in this campus and a few more centers of advanced studies, like National Institute of Fashion Technology (NIFT), <br />Sugar Research Institute, Mechatronics Institute, Entreprenuership Development Park, and Convention Centre will also be housed there in future.<br />
+  </div>
+</div>
+
+<div id="footer">All Rights Reserved
+<ul id="fot">
+<li><img src="fb.jpg" width="40" height="30"/></li>
+<li><img src="yt.jpg" width="40" height="30"/></li>
+<li><img src="twit.jpg" width="40" height="30"/></li>
+<li><img src="linked.png" width="40" height="30"/></li>
+</ul>
+</div>
+
+
+
+<script type="text/javascript">
+  var detailed = false;
+  var interrupt;
+  $('.imgcatalogo').click(function() {
+    if (detailed == false) {
+      detailed = true;
+      clearTimeout ( interrupt );
+      $(".imgcatalogo:not(#" + $(this)[0].id + ")").animate({
+        left: '2%',
+        marginLeft: '0px'
+      }, 1500 );
+      $(".imgcatalogo:not(#" + $(this)[0].id + ")").slideUp();
+      $(this).animate({
+        left: '6%',
+        marginLeft: '0px'
+      }, 3000 );
+      interrupt = setTimeout(' $("#' + $(this)[0].id.replace("_catalogo", "-text") +'").slideDown("fast")', 3000);}
+    else {
+      detailed = false;
+      clearTimeout ( interrupt );
+      $('.catalogo-text').slideUp();
+      $(".imgcatalogo:not(#" + $(this)[0].id + ")").slideDown("fast");
+      $("img#marketing_catalogo").animate({
+        marginLeft: '90px',
+        left: '26%'
+      }, 1500 );
+      $("img#website_catalogo").animate({
+        left: '12%'
+      }, 1500 );
+      $("img#software_catalogo").animate({
+        left: '60%',
+        marginLeft: '-100px'
+      }, 1500 );
+	  $("img#hardware_catalogo").animate({
+        left: '95%',
+        marginLeft: '-300px',
+      }, 1500 );
+	  
+      $(".imgcatalogo").slideDown("fast");
+    }
+  });
+  
+  jQuery(document).ready(function() {
+    jQuery('#mycarousel').jcarousel();
+});
+</script>
+</body>
+</html>

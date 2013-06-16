@@ -1,0 +1,150 @@
+body
+{
+background: url(gc2.jpg);
+}
+
+.imgcatalogo {
+  position: absolute;
+}
+#website_catalogo{
+  left: 12%;
+  z-index: 0;
+  
+	width: 150px;
+	height: 150px;
+	-webkit-border-radius: 99em;
+	-moz-border-radius: 99em;
+	border-radius: 99em;
+	border: 5px solid #eee;
+	box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+}
+#software_catalogo {
+  left:60%;
+  margin-left: -100px;
+  z-index: 1;
+  
+  
+	width: 150px;
+	height: 150px;
+	-webkit-border-radius: 99em;
+	-moz-border-radius: 99em;
+	border-radius: 99em;
+	border: 5px solid #eee;
+	box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+}
+#hardware_catalogo {
+  left:95%;
+  margin-left: -300px;
+  z-index: 1;
+  
+  
+	width: 150px;
+	height: 150px;
+	-webkit-border-radius: 99em;
+	-moz-border-radius: 99em;
+	border-radius: 99em;
+	border: 5px solid #eee;
+	box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+#marketing_catalogo{
+	left:26%;
+  margin-left: -200px;
+  z-index: 2;
+  
+	width: 150px;
+	height: 150px;
+	margin-left:4.5em;
+	-webkit-border-radius: 99em;
+	-moz-border-radius: 99em;
+	border-radius: 99em;
+	border: 5px solid #eee;
+	box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+}
+#image_catalogo {
+  width: 240px;
+  height: 500px;
+  float:left;
+  text-align:center;
+}
+.catalogo-text {
+  position:absolute;
+  z-index: -1;
+  padding-left: 250px;
+  width: 990px;
+  height: 375px;
+  -webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	border: 4px solid black;
+	box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+	overflow:hidden;
+	/*background: url(shadow.jpg);*/
+	left:.5%;
+	top:35%;
+	font-family:myal;
+	font-size:1.25em;
+	color:blue;
+}
+
+#top
+{
+width:1250px;
+height:250px;
+color:green;
+/*background: url(shadow.jpg);*/
+}
+#logo
+{
+margin-left:920px;
+margin-top:-205px;
+}
+
+#footer
+{
+width:1250px;
+height:35px;
+font-family:myal;
+/*background: url(shadow.jpg);*/
+margin-top:400px;
+text-align:left;
+color:white;
+}
+@font-face
+{
+font-family: myFF;
+src: url('a.ttf');
+}
+@font-face
+{
+font-family: myal;
+src: url('Alegreya-Italic.otf');
+}
+@font-face
+{
+font-family: myf1;
+src: url('Almendra-Regular.otf');
+}
+@font-face
+{
+font-family: myf5;
+src: url('AlmendraSC-Regular.otf');
+}
+@font-face
+{
+font-family: myFF1;
+src: url('b.ttf');
+}
+
+#fot
+{
+margin-top:-20px;
+margin-left:1000px;
+
+}
+
+
+#marketing-text,#website-text,#software-text,#hardware-text
+{
+background-color:white;
+}
